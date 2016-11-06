@@ -22,7 +22,6 @@ function runServer(){
   const server = new Hapi.Server();
 
   server.connection({
-    host: 'localhost',
     port: process.env.PORT || 8080
   });
 
