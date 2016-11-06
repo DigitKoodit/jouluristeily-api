@@ -23,7 +23,15 @@ function runServer(){
 
   server.connection({
     host: 'localhost',
-    port: 8080
+    port: process.env.PORT || 8080
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/',
+    handler: (request, reply) => {
+      reply('There is nothing here. :)');
+    }
   });
 
   server.route({
@@ -32,7 +40,7 @@ function runServer(){
     handler: (request, reply) => {
       reply(mockData);
     }
-  })
+  });
 
   server.start((err) => {
     if(err) throw err;
