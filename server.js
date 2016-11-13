@@ -7,6 +7,7 @@ const times = {
   time2115: 1480619700000,
   time2130: 1480620600000,
   time2215: 1480623300000,
+  time2230: 0,
   time2300: 1480626000000,
   time2315: 1480626900000,
   time2400: 1480629600000,
@@ -190,6 +191,131 @@ const mockData = {
   ]
 }
 
+const openingHours = {
+  hours: [
+    {
+      name: 'Tax Free',
+      deck: '6',
+      category: 'Ostokset',
+      times: [
+        {
+          startTime: times.time2015, 
+          endTime: times.time2230
+        },
+        {
+          startTime: times.time0900,
+          endTime: times.time1330
+        },
+        {
+          startTime: times.time1430,
+          endTime: times.time1900
+        }
+      ]
+    },
+    {
+      name: 'Tobacco',
+      deck: '6',
+      category: 'Ostokset',
+      times: [
+        {
+          startTime: times.time2030, 
+          endTime: times.time2230
+        },
+        {
+          startTime: times.time1000,
+          endTime: times.time1900
+        }
+      ]
+    },
+    {
+      name: 'Perfumes & Cosmetics',
+      deck: '6',
+      category: 'Ostokset',
+      times: [
+        {
+          startTime: times.time2030, 
+          endTime: times.time2230
+        },
+        {
+          startTime: times.time1000,
+          endTime: times.time1830
+        }
+      ]
+    },
+    {
+      name: 'Starlight Palace',
+      deck: '6-7',
+      category: 'Baarit',
+      times: [
+        {
+          startTime: times.time2100, 
+          endTime: times.time0430
+        },
+        {
+          startTime: times.time1430,
+          endTime: times.time1830
+        }
+      ]
+    },
+    {
+      name: 'Iskelmäbaari',
+      deck: '6',
+      category: 'Baarit',
+      times: [
+        {
+          startTime: times.time2015, 
+          endTime: times.time2400
+        },
+        {
+          startTime: times.time0900,
+          endTime: times.time1830
+        }
+      ]
+    },
+    {
+      name: 'Pubi',
+      deck: '7',
+      category: 'Baarit',
+      times: [
+        {
+          startTime: times.time2015, 
+          endTime: times.time0200
+        },
+        {
+          startTime: times.time1200,
+          endTime: times.time1900
+        }
+      ]
+    },
+    {
+      name: 'Piano Bar',
+      deck: '7',
+      category: 'Baarit',
+      times: [
+        {
+          startTime: times.time2015, 
+          endTime: times.time0030
+        },
+        {
+          startTime: times.time1100,
+          endTime: times.time1830
+        }
+      ]
+    },
+    {
+      name: 'Klubi',
+      deck: '10',
+      category: 'Baarit',
+      times: [
+        {
+          startTime: times.time2300, 
+          endTime: times.time0430
+        }
+      ]
+    }
+  ]
+}
+
 function runServer(){
   const server = new Hapi.Server();
 
@@ -215,9 +341,9 @@ function runServer(){
 
   server.route({
     method: 'GET',
-    path: '/open',
+    path: '/openingHours',
     handler: (request, reply) => {
-      reply(mockData);
+      reply(openingHours);
     }
   });
 
