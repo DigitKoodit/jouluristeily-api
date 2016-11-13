@@ -112,7 +112,7 @@ const mockData = {
     },
     {
       name: 'Boatsinkers Starlightissa',
-      startTime: times.time0000,
+      startTime: times.time2400,
       endTime: times.time0015,
       description: 'DJ-koalitio Boatsinkers vetää bileet äärimmilleen ja nupit kaakkoon Starlight Palacessa (Kansi 6 ja 7)'
     },
@@ -142,8 +142,8 @@ const mockData = {
     },
     {
       name: 'Super Jackpot Bingo Iskelmäbaarissa',
-      startTime: times.time0000,
-      endTime: times.time0015,
+      startTime: times.time1230,
+      endTime: times.time1330,
       description: 'Super Jackpot Bingo Iskelmäbaarissa (Kansi 6)'
     },
     {
