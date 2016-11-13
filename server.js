@@ -42,7 +42,7 @@ const times = {
 }
 
 const mockData = {
-  timeStamp: "0",
+  iteration: 1,
   events: [
      {
       name: 'Lähtö',
