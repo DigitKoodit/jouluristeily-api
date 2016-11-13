@@ -2,6 +2,7 @@ const Hapi = require('hapi');
 
 const times = {
   time2015: 1480616100000,
+  time2030: 1480617000000,
   time2100: 1480618800000,
   time2115: 1480619700000,
   time2130: 1480620600000,
@@ -12,19 +13,31 @@ const times = {
   time0015: 1480630500000,
   time0030: 1480631400000,
   time0100: 1480633200000,
+  time0200: 1480636800000,
   time0130: 1480635000000,
   time0430: 1480645800000,
+  time0500: 1480647600000,
+  time0600: 1480651200000,
+  time0800: 1480658400000,
+  time0900: 1480662000000,
+  time1000: 1480665600000,
   time1100: 1480669200000,
   time1200: 1480672800000,
   time1230: 1480674600000,
   time1245: 1480675500000,
+  time1300: 1480676400000,
   time1330: 1480678200000,
   time1400: 1480680000000,
+  time1430: 1480681800000,
   time1500: 1480683600000,
+  time1530: 1480685400000,
   time1600: 1480687200000,
+  time1645: 1480689900000,
+  time1715: 1480691700000,
   time1730: 1480692600000,
   time1800: 1480694400000,
-  time1830: 1480696200000
+  time1830: 1480696200000,
+  time1900: 1480698000000
 }
 
 const mockData = {
@@ -101,6 +114,78 @@ const mockData = {
       time: times.time0000,
       endTime: times.time0015,
       description: 'DJ-koalitio Boatsinkers vetää bileet äärimmilleen ja nupit kaakkoon Starlight Palacessa (Kansi 6 ja 7)'
+    },
+    {
+      name: 'YouTube-korneri',
+      time: times.time1100,
+      endTime: times.time1200,
+      description: 'Paluupäivän aloittaa Pianobaarissa uutuusohjelma: Youtube-korneri (Kansi 7)'
+    },
+    {
+      name: 'Musavisa Iskelmäbaarissa',
+      time: times.time1200,
+      endTime: times.time1230,
+      description: 'Musavisa Iskelmäbaarissa kannella 6'
+    },
+    {
+      name: 'NHL17-kisa Pubissa',
+      time: times.time1200,
+      endTime: times.time1500,
+      description: 'NHL17-skabailut jatkuu ja Beer pongia tarjolla Pubissa (Kansi 7)'
+    },
+    {
+      name: 'Pianisti Piano Barissa',
+      time: times.time1200,
+      endTime: times.time1245,
+      description: 'Pianisti Stenly soittaa Piano Barissa (Kansi 7)'
+    },
+    {
+      name: 'Super Jackpot Bingo Iskelmäbaarissa',
+      time: times.time0000,
+      endTime: times.time0015,
+      description: 'Super Jackpot Bingo Iskelmäbaarissa (Kansi 6)'
+    },
+    {
+      name: 'Rastikierros',
+      time: times.time1400,
+      endTime: times.time1600,
+      description: 'Jouluristeilyn ultimaattinen rastikierros. Kerää joukkue, osallistu ja voita! Lähtö Piano Barista (Kansi 7)'
+    },
+    {
+      name: 'Karaokea Iskelmäbaarissa',
+      time: times.time1400,
+      endTime: times.time1800,
+      description: 'Karaokea ilmoille iskelmäbaarissa kannella 6'
+    },
+    {
+      name: 'Trubaduuri Pubissa',
+      time: times.time1500,
+      endTime: times.time1645,
+      description: 'Trubaduuri Vaakku viihdyttää Pubissa (Kansi 6)'
+    },
+    {
+      name: 'Joku Paikallinen Bändi Starlightissa',
+      time: times.time1530,
+      endTime: times.time1715,
+      description: 'Bilebändi Joku Paikallinen Bändi nostaa paluupäivän tunnelmaa Starlight Palacessa (Kansi 6 ja 7)'
+    },
+    {
+      name: 'Pianisti Piano Barissa',
+      time: times.time1645,
+      endTime: times.time1730,
+      description: 'Pianisti Stenly soittaa Piano Barissa (Kansi 7)'
+    },
+    {
+      name: 'Rastikierroksen Palkintojenjako',
+      time: times.time1715,
+      endTime: times.time1730,
+      description: 'Jouluristeilyn rastikierroksen palkintojenjako Starlightissa (Kansi 6 ja 7)'
+    },
+    {
+      name: 'DJ Eki Starlightissa',
+      time: times.time1730,
+      endTime: times.time1830,
+      description: 'DJ Eki ottaa viimeiset irti risteilykansasta Starlight Palacessa (Kansi 6 ja 7)'
     }
   ]
 }
