@@ -43,18 +43,6 @@ const mockData = {
       description: 'Pianisti Stenly soittaa Piano Barissa (Kansi 7)'
     },
     {
-      name: 'Lähtö',
-      startTime: times.time2015,
-      endTime: false,
-      description: 'Baltic Princess lähtee Turusta ja ravintolat aukeavat'
-    },
-    {
-      name: 'Pianisti Piano Barissa',
-      time: times.time2015,
-      endTime: times.time2300,
-      description: 'Pianisti Stenly soittaa Piano Barissa (Kansi 7)'
-    },
-    {
       name: 'Tervetulotilaisuus',
       startTime: times.time2100,
       endTime: times.time2215,
