@@ -1,11 +1,13 @@
 const Hapi = require('hapi');
 
 const times = {
+  time2000: 1480615200000,
   time2015: 1480616100000,
   time2030: 1480617000000,
   time2100: 1480618800000,
   time2115: 1480619700000,
   time2130: 1480620600000,
+  time2200: 1480622400000,
   time2215: 1480623300000,
   time2230: 1480624200000,
   time2300: 1480626000000,
@@ -311,6 +313,112 @@ const openingHours = {
         {
           startTime: times.time2300, 
           endTime: times.time0430
+        }
+      ]
+    },
+    {
+      name: 'Buffet',
+      deck: '7',
+      category: 'Ravintolat',
+      times: [
+        {
+          startTime: times.time2015, 
+          endTime: times.time2200
+        },
+        {
+          startTime: times.time2230, 
+          endTime: times.time2400
+        },
+        {
+          startTime: times.time0600, 
+          endTime: times.time1100
+        },
+        {
+          startTime: times.time1400, 
+          endTime: times.time1600
+        }
+      ]
+    },
+    {
+      name: 'Grill House',
+      deck: '7',
+      category: 'Ravintolat',
+      times: [
+        {
+          startTime: times.time2015, 
+          endTime: times.time2300
+        },
+        {
+          startTime: times.time0800, 
+          endTime: times.time1100
+        },
+        {
+          startTime: times.time1300, 
+          endTime: times.time1730
+        }
+      ]
+    },
+    {
+      name: 'Katarina\'s Kitchen',
+      deck: '7',
+      category: 'Ravintolat',
+      times: [
+        {
+          startTime: times.time2015, 
+          endTime: times.time2300
+        },
+        {
+          startTime: times.time0800, 
+          endTime: times.time1100
+        },
+        {
+          startTime: times.time1300, 
+          endTime: times.time1730
+        }
+      ]
+    },
+    {
+      name: 'Cafeteria',
+      deck: '6',
+      category: 'Ravintolat',
+      times: [
+        {
+          startTime: times.time2015, 
+          endTime: times.time0500
+        },
+        {
+          startTime: times.time0600, 
+          endTime: times.time1900
+        }
+      ]
+    },
+    {
+      name: 'Saunaosasto',
+      deck: '2',
+      category: 'Muut',
+      times: [
+        {
+          startTime: times.time2000, 
+          endTime: times.time2300
+        },
+        {
+          startTime: times.time0800, 
+          endTime: times.time1800
+        }
+      ]
+    },
+    {
+      name: 'Loimun ständi',
+      deck: '6',
+      category: 'Muut',
+      times: [
+        {
+          startTime: times.time2200, 
+          endTime: times.time2400
+        },
+        {
+          startTime: times.time1200, 
+          endTime: times.time1600
         }
       ]
     }
