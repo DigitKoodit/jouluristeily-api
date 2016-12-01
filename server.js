@@ -7,7 +7,7 @@ const times = {
   time2115: 1480619700000,
   time2130: 1480620600000,
   time2215: 1480623300000,
-  time2230: 0,
+  time2230: 1480624200000,
   time2300: 1480626000000,
   time2315: 1480626900000,
   time2400: 1480629600000,
@@ -192,6 +192,7 @@ const mockData = {
 }
 
 const openingHours = {
+  iteration: 1,
   hours: [
     {
       name: 'Tax Free',
